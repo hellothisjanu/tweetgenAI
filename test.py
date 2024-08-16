@@ -1,9 +1,10 @@
 #pip install streamlit
+#pip install langchain
+#pip install langchain_openai
+#pip install langchain_google_genai
 import os
 import streamlit as st
-import langchain
-import langchain_openai
-import langchain_google_genai
+
 os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 st.title("Tweet Generator - V 🐦")
