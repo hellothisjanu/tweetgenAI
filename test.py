@@ -1,4 +1,6 @@
 #pip install streamlit
+#pip install langchain_google_genai
+
 import os
 import streamlit as st
 
