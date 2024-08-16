@@ -26,7 +26,7 @@ gemini_model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
 
 if st.button("Generate"):
     prompt = f"Give me {number} tweets on {topic}."
-    response = gpt3_model.invoke(prompt)
+    response = gemini_model.invoke(prompt)
     st.write(response.content)
 
 
